@@ -1,0 +1,19 @@
+// Majestrix baseline battle settings.
+// Overrides conf/battle/*.conf. Only list values that differ from upstream.
+
+// --- Rates: low rate (2.5x to 3x) ---
+// conf/battle/exp.conf
+base_exp_rate: 300
+job_exp_rate: 300
+
+// conf/battle/drops.conf
+// Common, healing, usable and equipment drops at 2.5x.
+// Cards and MVP rewards stay at 1x to keep them rare.
+item_rate_common: 250
+item_rate_common_boss: 250
+item_rate_heal: 250
+item_rate_heal_boss: 250
+item_rate_use: 250
+item_rate_use_boss: 250
+item_rate_equip: 250
+item_rate_equip_boss: 250

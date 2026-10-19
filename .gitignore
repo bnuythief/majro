@@ -64,10 +64,17 @@ Thumbs.db
 /3rdparty/httplib/obj
 
 # /db/
-/db/import
+# Only customized db/import files are tracked. The rest are copied from
+# db/import-tmpl on each machine (see doc/majestrix_setup.md).
+/db/import/*
+!/db/import/README.md
 
 # /conf/
-/conf/import
+# Only customized conf/import files are tracked. Never track char_conf.txt,
+# inter_conf.txt, login_conf.txt, map_conf.txt or web_conf.txt: they hold
+# passwords and IPs.
+/conf/import/*
+!/conf/import/battle_conf.txt
 /conf/msg_conf/import
 
 # /lib
